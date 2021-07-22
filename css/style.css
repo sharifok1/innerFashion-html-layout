@@ -1,0 +1,285 @@
+/* Base CSS */
+
+
+li{
+    text-decoration: none;
+    list-style: none;
+}
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    background-image: url(../images/bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    
+    
+}
+a:hover { text-decoration: none }
+
+
+.wapper{
+    width: 960px;
+    margin: 0 auto;
+}
+
+/*======== top footer 
+================================*/
+.inner-top-foot{
+background-color:#fa098e;
+}
+
+.tab-bar{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+
+/*============ logo bar and heading 
+=========================================*/
+.logo-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    box-shadow: 0 0 5px 2px #fa098e;
+    background-color: #e66fc244;
+   
+}
+.logo-parents{
+    width:150px;
+    display: flex;
+    justify-content: center;
+}
+.name-parents{
+    display: flex;
+    justify-content: center;
+}
+.logo-name h1{
+    color: #fa098e;
+    font-size:40px;
+    font-family: 'Courgette', cursive;
+}
+
+
+/*========== navbar section 
+====================================*/
+nav{
+    position: relative;
+    height: 50px;
+    background-color: #fa098e;
+    width: auto;
+    margin: 10px;
+    box-shadow: 0 0 5px 2px #fa098e;
+}
+ nav ul{
+    position: absolute;
+    left: 30px;
+    top:0;
+    line-height: 50px;
+}
+nav ul li{
+  
+    display: inline-block;
+    margin-right: 50px;
+}
+ nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-weight: 600;
+}
+#sort-menu{
+    position: absolute;
+    color:white;
+    display: none;
+}
+#menu-yes{
+    position: absolute;
+    top:0;
+    right:20px;
+    color: white;
+    font-size: 30px;
+    line-height:50px;
+    cursor: pointer;
+    display:none;
+
+}
+.menu-no{
+    position: absolute;
+    right:10px;
+    font-size: 26px;
+    display: none;
+}
+#menu-no{
+    top:0;
+    position: absolute;
+    right:20px;
+    color: white;
+    font-size: 30px;
+    line-height:50px;
+    cursor: pointer;
+    display:none;
+
+
+}
+/* =========slider-projects
+=================================== */
+
+.slider-and-card{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+    
+}
+.slider-animation{
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    margin:10px;
+    margin-top:20px;
+  
+    padding:5px;
+    box-shadow: 0 0 10px 2px red;
+}
+.carousel-item img{
+    width: 80%;
+}
+.card-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    width:30%;
+    height:auto;
+    box-shadow: 0 0 10px 2px red;
+}
+
+/*============== new-collections-aside 
+==========================================*/
+.btn-buy-now{
+    background-image: linear-gradient(to top,#fa098e, #fda3a3);
+    width:127px;
+    font-weight: 600;
+}
+.inner-system{
+    background-color: #fa098e;
+}
+
+
+/* media quary 
+=============================*/
+
+
+@media only screen and (max-width:678px){
+    
+/* ===========nav bar 
+============================*/
+    #menu-yes{
+        display:block;
+    }
+    .menu-no{
+        display: inline;
+    }
+     nav ul{
+        display: block;
+        position: fixed;
+        left:-100%;
+        height:auto;
+        top:100px;
+        width:20%;
+        z-index:20; 
+        text-align: center;  
+        background-image:linear-gradient(to left, #000000, #0d0924cb) ;
+        transition: .5s;
+     }
+     nav ul li{
+         display:flex;
+         flex-direction: column;
+         margin-right:10%;
+         border-bottom: 2px solid ;
+         border-image:linear-gradient(to right, rgb(255, 2, 2), #0a06f5)30;
+    }
+     #sort-menu:checked ~ ul{
+        left: 0;
+        width: 60%;
+     }
+     #sort-menu:checked ~ul #menu-yes{
+         display:block;
+         position: fixed;
+         top:5px;
+     }
+     #sort-menu:checked ~ul #menu-no{
+         display: none;
+     }
+     /* ===========top footer 
+     ==================================*/
+     .tab-bar{
+         flex-direction: column;
+         align-items: center;
+     }
+     .search-form{
+         margin-left: 30px;
+     }
+     /* =================header and logo
+     ====================================== */
+     .logo-header{
+         flex-direction: column;
+     }
+     .slider-and-card{
+         flex-direction: column;
+     }
+     .slider-animation{
+         width: auto;
+     }
+     .card-style{
+         width: 95%;
+     }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

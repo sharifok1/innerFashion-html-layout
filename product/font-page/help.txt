@@ -1,0 +1,17 @@
+font imge photo name example: 
+==============================
+img1.jpg
+img2.jpg
+img3.jpg
+img4.jpg
+img5.jpg
+img6.jpg
+ .
+.
+.
+.
+serial will be continue....
+
+img1.jpg to.......img12.jpg( 1st page)
+
+img9.jpg to......img16.jpg( 2nd page)

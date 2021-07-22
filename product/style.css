@@ -1,0 +1,82 @@
+/* Base CSS */
+li{
+    text-decoration: none;
+    list-style: none;
+}
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.row7{
+    height: auto;
+    width: auto;
+    background-color: bisque;
+}
+.flex-content1{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    height:auto;
+}
+.flex-content1 >div{
+    margin:20px;
+    /*width:300px;
+    height: 300px;*/
+    background-color: cadetblue;
+    max-height: px;
+    max-width: 370px;
+}
+.flex-content2{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    height:auto;
+}
+.flex-content2 >div{
+    margin:20px;
+    /*width:300px;
+    height: 300px;*/
+    background-color: cadetblue;
+    max-height:px;
+    max-width:370px;
+
+}
+.next-btn ul li{
+    background-color: deeppink;
+    width: 150px;
+    padding: 6px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+}
+.next-btn ul li a{
+    color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
