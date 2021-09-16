@@ -39,17 +39,16 @@ body {
     
 }
 a:hover { text-decoration: none }
-
-
-.wapper{
-    width: 960px;
-    margin: 0 auto;
-}
-
 /*======== top footer 
 ================================*/
 .inner-top-foot{
-background-color:#fa098e;
+    padding-top: 0;
+    margin-top: -48px;
+    display: inline-block;
+    width: 100%;
+    position: fixed;
+    background-color:#fa098e;
+    z-index: 1000;
 }
 
 .tab-bar{
@@ -61,10 +60,11 @@ background-color:#fa098e;
 /*============ logo bar and heading 
 =========================================*/
 .logo-header{
+    margin: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    
     box-shadow: 0 0 5px 2px #fa098e;
     background-color: #e66fc244;
    
@@ -83,7 +83,13 @@ background-color:#fa098e;
     font-size:40px;
     font-family: 'Courgette', cursive;
 }
-
+.cartInput{
+    margin-bottom: 10px;
+    font-size: 10px;
+    width: 20px;
+    outline: none;
+    border-radius: 50%;
+}
 
 /*========== navbar section 
 ====================================*/
@@ -185,6 +191,9 @@ nav ul li{
     width:127px;
     font-weight: 600;
 }
+.btn-buy-now:hover{
+    background-image: linear-gradient(to bottom,#fa098e, #fda3a3);
+}
 .inner-system{
     background-color: #fa098e;
 }
@@ -262,24 +271,5 @@ nav ul li{
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
